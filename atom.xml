@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Something from Charlie</title>
-  
+  <title>Chalie&#39;s Blog</title>
+  <subtitle>Don&#39;t be the same,BE BETTER!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cirfe.github.io/"/>
-  <updated>2016-11-14T02:43:43.052Z</updated>
+  <updated>2016-11-14T08:30:45.544Z</updated>
   <id>https://cirfe.github.io/</id>
   
   <author>
@@ -19,12 +19,15 @@
     <title>Hello World</title>
     <link href="https://cirfe.github.io/2016/11/14/hello-world/"/>
     <id>https://cirfe.github.io/2016/11/14/hello-world/</id>
-    <published>2016-11-14T02:43:43.056Z</published>
-    <updated>2016-11-14T02:43:43.052Z</updated>
+    <published>2016-11-14T08:30:45.544Z</published>
+    <updated>2016-11-14T08:30:45.544Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<p>折腾了一天总算是基本搞定了。记录下几个问题：</p>
+<h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><h3 id="安装hexo出问题"><a href="#安装hexo出问题" class="headerlink" title="安装hexo出问题"></a>安装hexo出问题</h3><p>  第一次安装NodeJS的时候采用的apt方式安装，然后再装hexo出现了莫名其妙的问题。安装最新的NodeJS问题解决。</p>
+<h3 id="使用npm安装组件卡住"><a href="#使用npm安装组件卡住" class="headerlink" title="使用npm安装组件卡住"></a>使用npm安装组件卡住</h3><a id="more"></a>
+<p>  使用淘宝源，在命令后添加 –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a>.<br>  例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$npm</span> install hexo-server --save --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<h3 id="deploy后，在github上访问出现大量空白"><a href="#deploy后，在github上访问出现大量空白" class="headerlink" title="deploy后，在github上访问出现大量空白"></a>deploy后，在github上访问出现大量空白</h3><p>  github的问题，<a href="https://github.com/iissnan/hexo-theme-next/issues/1214" target="_blank" rel="external">解决方法</a></p>
+<h2 id="hexo-的简单使用"><a href="#hexo-的简单使用" class="headerlink" title="hexo 的简单使用"></a>hexo 的简单使用</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
@@ -36,7 +39,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;折腾了一天总算是基本搞定了。记录下几个问题：&lt;/p&gt;
+&lt;h2 id=&quot;Questions&quot;&gt;&lt;a href=&quot;#Questions&quot; class=&quot;headerlink&quot; title=&quot;Questions&quot;&gt;&lt;/a&gt;Questions&lt;/h2&gt;&lt;h3 id=&quot;安装hexo出问题&quot;&gt;&lt;a href=&quot;#安装hexo出问题&quot; class=&quot;headerlink&quot; title=&quot;安装hexo出问题&quot;&gt;&lt;/a&gt;安装hexo出问题&lt;/h3&gt;&lt;p&gt;  第一次安装NodeJS的时候采用的apt方式安装，然后再装hexo出现了莫名其妙的问题。安装最新的NodeJS问题解决。&lt;/p&gt;
+&lt;h3 id=&quot;使用npm安装组件卡住&quot;&gt;&lt;a href=&quot;#使用npm安装组件卡住&quot; class=&quot;headerlink&quot; title=&quot;使用npm安装组件卡住&quot;&gt;&lt;/a&gt;使用npm安装组件卡住&lt;/h3&gt;
     
     </summary>
     
