@@ -102,7 +102,7 @@ Short    16位有符号补码整数($-2^{15}$~$2^{15}$-1)
 Int      32位有符号补码整数($-2^{31}$~$2^{31}$-1)
 Long     64位有符号补码整数($-2^{63}$~$2^{63}$-1)
 Char     16位无符号Unicode字符（0~$2^">
-<meta property="og:updated_time" content="2016-11-15T14:46:14.083Z">
+<meta property="og:updated_time" content="2016-11-15T14:55:16.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scala学习(一)：基本数据类型">
 <meta name="twitter:description" content="基本类型
@@ -310,7 +310,7 @@ Char     16位无符号Unicode字符（0~$2^">
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-check-o"></i>
             </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-15T22:46:14+08:00">
+            <time title="Post modified" itemprop="dateModified" datetime="2016-11-15T22:55:16+08:00">
               2016-11-15
             </time>
             
@@ -377,14 +377,12 @@ Char     16位无符号Unicode字符（0~$2^">
 <li>String   char 序列</li>
 <li>Float    32位IEEE754单精度浮点数</li>
 <li>Double   64位IEEE754单精度浮点数</li>
-<li><p>Boolean  true或false</p>
-<p><strong>String归于java.lang,其余所有基本类型都是包scala的成员</strong></p>
-<a id="more"></a> 
+<li>Boolean  true或false<a id="more"></a> 
+<strong>String归于java.lang,其余所有基本类型都是包scala的成员</strong></li>
+</ul>
 <h2 id="操作符和方法"><a href="#操作符和方法" class="headerlink" title="操作符和方法"></a>操作符和方法</h2><p>Scala为基本类型提供了丰富的操作符集，而这些操作符实际只是普通方法调用的另一种形式，例如1 + 2和1.+(2)其实是一回事，因为<strong>Scala的基本类型也是对象</strong>。</p>
 <h3 id="任何方法都可以是操作符"><a href="#任何方法都可以是操作符" class="headerlink" title="任何方法都可以是操作符"></a>任何方法都可以是操作符</h3><p>Scala里的操作符不是特殊的语法，任何方法都可以是操作符。到底是方法还是操作符取决于如何使用它。如果写成s.indexOf(‘o’),indexOf就不是操作符，但如果写成s indexOf ‘o’,那么indexOf就是操作符。</p>
 <h3 id="关于前缀操作符和后缀操作符"><a href="#关于前缀操作符和后缀操作符" class="headerlink" title="关于前缀操作符和后缀操作符"></a>关于前缀操作符和后缀操作符</h3><p>中缀操作符是二元操作符，而前缀操作符和后缀操作符都是一元的。前缀操作符例子，-2.0,!found，这些前缀操作符和中缀操作符一样，都是值类型对象调用方法的简写形式，然而这种情况下，方法名在操作符字符上前缀<code>unary_</code>,例如Scala会把表达式-2.0转化成方法调用：(-2.0).unary<em>。标识符中能作为前缀操作符的只有<strong>+,-,!,~</strong>。因此对类型定义了unary</em>!的方法，就可以对值或变量用!p这样的方式调用，但是即使定义了unary_<em>的方法，也不能用</em>p调用，因为<em>不是那四个操作符之一。如果像</em>p这样调用，Scala会理解为*.p，可能会出现莫名错误。</p>
-</li>
-</ul>
 <blockquote>
 <p>在Scala里，方法调用的<strong>空括号</strong>可以省略，惯例是如果方法带有副作用就加上括号，如println();如果没有副作用就去掉括号,如String的toLowerCase方法。</p>
 </blockquote>
