@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>https://chaohui.me/2016/11/23/learn-scala-2/</loc>
+    <lastmod>2016-11-23T13:46:29.830Z</lastmod>
+    <data>
+        <display>
+        <title>Scala学习(二)：控制结构</title>
+        <pubTime>2016-11-23T13:31:52.000Z</pubTime>
+        
+        <tag>控制结构</tag>
+         
+         
+           
+             
+              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chaohui.me/2016/11/15/learn-scala-1/</loc>
+    <lastmod>2016-11-15T15:03:11.690Z</lastmod>
+    <data>
+        <display>
+        <title>Scala学习(一)：基本数据类型</title>
+        <pubTime>2016-11-15T14:31:52.000Z</pubTime>
+        
+        <tag>数据类型</tag>
+         
+        <tag>操作符</tag>
+         
+         
+           
+             
+              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://chaohui.me/2016/11/14/hello-world/</loc>
+    <lastmod>2016-11-14T08:30:45.544Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-11-14T08:30:45.544Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web" url="https://chaohui.me/categories/Web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
