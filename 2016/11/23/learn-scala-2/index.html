@@ -1,28 +1,362 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Chalie&#39;s Blog</title>
-  <subtitle>Don&#39;t be the same,BE BETTER!</subtitle>
-  <link href="/atom.xml" rel="self"/>
+<!doctype html>
+
+
+
   
-  <link href="https://cirfe.github.io/"/>
-  <updated>2016-11-23T13:46:29.830Z</updated>
-  <id>https://cirfe.github.io/</id>
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <author>
-    <name>Charlie</name>
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Scala学习(二)：控制结构</title>
-    <link href="https://cirfe.github.io/2016/11/23/learn-scala-2/"/>
-    <id>https://cirfe.github.io/2016/11/23/learn-scala-2/</id>
-    <published>2016-11-23T13:31:52.000Z</published>
-    <updated>2016-11-23T13:46:29.830Z</updated>
     
-    <content type="html"><![CDATA[<p>scala的控制结构，仅有if,while,for,try,match和函数调用而已。</p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="控制结构," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Chalie's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="scala的控制结构，仅有if,while,for,try,match和函数调用而已。
+If表达式Scala的if语句与其他语言if语句，没有什么不同，但是Scala的if语句是能返回值的表达式。例如：1val filename = if(!args.isEmpty) args(0) else &quot;default.txt&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scala学习(二)：控制结构">
+<meta property="og:url" content="https://cirfe.github.io/2016/11/23/learn-scala-2/index.html">
+<meta property="og:site_name" content="Chalie's Blog">
+<meta property="og:description" content="scala的控制结构，仅有if,while,for,try,match和函数调用而已。
+If表达式Scala的if语句与其他语言if语句，没有什么不同，但是Scala的if语句是能返回值的表达式。例如：1val filename = if(!args.isEmpty) args(0) else &quot;default.txt&quot;">
+<meta property="og:updated_time" content="2016-11-23T13:46:29.830Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Scala学习(二)：控制结构">
+<meta name="twitter:description" content="scala的控制结构，仅有if,while,for,try,match和函数调用而已。
+If表达式Scala的if语句与其他语言if语句，没有什么不同，但是Scala的if语句是能返回值的表达式。例如：1val filename = if(!args.isEmpty) args(0) else &quot;default.txt&quot;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://cirfe.github.io/2016/11/23/learn-scala-2/"/>
+
+
+
+
+
+  <title> Scala学习(二)：控制结构 | Chalie's Blog </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Chalie's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Don't be the same,BE BETTER!</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://cirfe.github.io/2016/11/23/learn-scala-2/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Charlie">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Chalie's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Chalie's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Scala学习(二)：控制结构
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-23T21:31:52+08:00">
+              2016-11-23
+            </time>
+
+            &nbsp;|&nbsp;
+
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-check-o"></i>
+            </span>
+            <time title="Post modified" itemprop="dateModified" datetime="2016-11-23T21:46:29+08:00">
+              2016-11-23
+            </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/scala/" itemprop="url" rel="index">
+                    <span itemprop="name">scala</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/23/learn-scala-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/23/learn-scala-2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>scala的控制结构，仅有if,while,for,try,match和函数调用而已。</p>
 <h2 id="If表达式"><a href="#If表达式" class="headerlink" title="If表达式"></a>If表达式</h2><p>Scala的if语句与其他语言if语句，没有什么不同，但是Scala的if语句是能返回值的表达式。例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val filename = <span class="keyword">if</span>(!args.isEmpty) args(0) <span class="keyword">else</span> <span class="string">"default.txt"</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a> 
 <h2 id="While表达式"><a href="#While表达式" class="headerlink" title="While表达式"></a>While表达式</h2><p>与其他语言的while表达式一致，同时也有do while循环。例如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">def gcdLoop(x: Long,y: Long): Long=&#123;</div><div class="line">    var a = x</div><div class="line">    var b = y</div><div class="line">    <span class="keyword">while</span>(a != 0)&#123;</div><div class="line">        val temp = a</div><div class="line">        a = b % a</div><div class="line">        b = temp</div><div class="line">    &#125;</div><div class="line">    b</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -50,149 +384,375 @@
 <p>第一个例子中的1，2后边其实是省略了Int，因为可以自动推断出来。<br>另外针对默认情况，不仅仅可以使用_，还可以使用其他字符，以表明用来匹配默认情况。例如第二个例子中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">case</span> whoa =&gt; whoa + <span class="string">" is unknown"</span></div></pre></td></tr></table></figure></p>
 <p>说明两点：<br>1.使用_和使用其他字符的区别是，使用_只能匹配，但是无法读取该变量，例如使用whoa就可以写成 <code>=&gt;whoa + &quot;is unknown&quot;</code>,使用_就只能写个”is unknow”,是无法读取该变量的。<br>2.为什么使用whoa或其他字符，会被认为是默认情况呢？因为whoa被当作一个<strong>变量</strong>来使用了。</p>
 <h3 id="一条case语句匹配多个条件"><a href="#一条case语句匹配多个条件" class="headerlink" title="一条case语句匹配多个条件"></a>一条case语句匹配多个条件</h3><p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">i match&#123;</div><div class="line">    <span class="keyword">case</span> 1 | 3 | 5 | 7 | 9 =&gt; println(<span class="string">"odd"</span>)</div><div class="line">    <span class="keyword">case</span> 2 | 4 | 6 | 8 | 10 =&gt; println(<span class="string">"even"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-]]></content>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/控制结构/" rel="tag"># 控制结构</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/15/learn-scala-1/" rel="next" title="Scala学习(一)：基本数据类型">
+                <i class="fa fa-chevron-left"></i> Scala学习(一)：基本数据类型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    <summary type="html">
+      <div class="ds-thread" data-thread-key="2016/11/23/learn-scala-2/"
+           data-title="Scala学习(二)：控制结构" data-url="https://cirfe.github.io/2016/11/23/learn-scala-2/">
+      </div>
     
-      &lt;p&gt;scala的控制结构，仅有if,while,for,try,match和函数调用而已。&lt;/p&gt;
-&lt;h2 id=&quot;If表达式&quot;&gt;&lt;a href=&quot;#If表达式&quot; class=&quot;headerlink&quot; title=&quot;If表达式&quot;&gt;&lt;/a&gt;If表达式&lt;/h2&gt;&lt;p&gt;Scala的if语句与其他语言if语句，没有什么不同，但是Scala的if语句是能返回值的表达式。例如：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;val filename = &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(!args.isEmpty) args(0) &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;default.txt&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="scala" scheme="https://cirfe.github.io/categories/scala/"/>
-    
-    
-      <category term="控制结构" scheme="https://cirfe.github.io/tags/%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
+  </div>
+
+
+        </div>
+        
+          
   
-  <entry>
-    <title>Scala学习(一)：基本数据类型</title>
-    <link href="https://cirfe.github.io/2016/11/15/learn-scala-1/"/>
-    <id>https://cirfe.github.io/2016/11/15/learn-scala-1/</id>
-    <published>2016-11-15T14:31:52.000Z</published>
-    <updated>2016-11-15T15:03:11.690Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><ul>
-<li>Byte     8位有符号补码整数($-2^7$ ~ $ 2^7 $-1)</li>
-<li>Short    16位有符号补码整数($-2^{15}$~$2^{15}$-1)</li>
-<li>Int      32位有符号补码整数($-2^{31}$~$2^{31}$-1)</li>
-<li>Long     64位有符号补码整数($-2^{63}$~$2^{63}$-1)</li>
-<li>Char     16位无符号Unicode字符（0~$2^{16}$-1)</li>
-<li>String   char 序列</li>
-<li>Float    32位IEEE754单精度浮点数</li>
-<li>Double   64位IEEE754单精度浮点数</li>
-<li>Boolean  true或false<a id="more"></a> 
-<strong>String归于java.lang,其余所有基本类型都是包scala的成员</strong></li>
-</ul>
-<h2 id="操作符和方法"><a href="#操作符和方法" class="headerlink" title="操作符和方法"></a>操作符和方法</h2><p>Scala为基本类型提供了丰富的操作符集，而这些操作符实际只是普通方法调用的另一种形式，例如1 + 2和1.+(2)其实是一回事，因为<strong>Scala的基本类型也是对象</strong>。</p>
-<h3 id="任何方法都可以是操作符"><a href="#任何方法都可以是操作符" class="headerlink" title="任何方法都可以是操作符"></a>任何方法都可以是操作符</h3><p>Scala里的操作符不是特殊的语法，任何方法都可以是操作符。到底是方法还是操作符取决于如何使用它。如果写成<code>s.indexOf(&#39;o&#39;)</code>,indexOf就不是操作符，但如果写成<code>s indexOf &#39;o&#39;</code>,那么indexOf就是操作符。</p>
-<h3 id="关于前缀操作符和后缀操作符"><a href="#关于前缀操作符和后缀操作符" class="headerlink" title="关于前缀操作符和后缀操作符"></a>关于前缀操作符和后缀操作符</h3><p>中缀操作符是二元操作符，而前缀操作符和后缀操作符都是一元的。前缀操作符例子，-2.0,!found，这些前缀操作符和中缀操作符一样，都是值类型对象调用方法的简写形式，然而这种情况下，方法名在操作符字符上前缀<code>unary_</code>,例如Scala会把表达式-2.0转化成方法调用：(-2.0).unary_-。标识符中能作为前缀操作符的只有<strong>+、-、!、~</strong>。因此对类型定义了unary_!的方法，就可以对值或变量用!p这样的方式调用，但是即使定义了unary_*的方法，也不能用*p调用，因为*不是那四个操作符之一。如果像*p这样调用，Scala会理解为*.p，可能会出现莫名错误。</p>
-<blockquote>
-<p>在Scala里，方法调用的<strong>空括号</strong>可以省略，惯例是如果方法带有副作用就加上括号，如println();如果没有副作用就去掉括号,如String的toLowerCase方法。</p>
-</blockquote>
-<h3 id="操作符优先级"><a href="#操作符优先级" class="headerlink" title="操作符优先级"></a>操作符优先级</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">操作符优先级（降序）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">* / %</td>
-</tr>
-<tr>
-<td style="text-align:center">+ -</td>
-</tr>
-<tr>
-<td style="text-align:center">:</td>
-</tr>
-<tr>
-<td style="text-align:center">!=</td>
-</tr>
-<tr>
-<td style="text-align:center">&lt;&gt;</td>
-</tr>
-<tr>
-<td style="text-align:center">&amp;</td>
-</tr>
-<tr>
-<td style="text-align:center">^</td>
-</tr>
-<tr>
-<td style="text-align:center">\</td>
-</tr>
-<tr>
-<td style="text-align:center">(所有字母)</td>
-</tr>
-<tr>
-<td style="text-align:center">(所有赋值操作符)</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;基本类型&quot;&gt;&lt;a href=&quot;#基本类型&quot; class=&quot;headerlink&quot; title=&quot;基本类型&quot;&gt;&lt;/a&gt;基本类型&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Byte     8位有符号补码整数($-2^7$ ~ $ 2^7 $-1)&lt;/li&gt;
-&lt;li&gt;Short    16位有符号补码整数($-2^{15}$~$2^{15}$-1)&lt;/li&gt;
-&lt;li&gt;Int      32位有符号补码整数($-2^{31}$~$2^{31}$-1)&lt;/li&gt;
-&lt;li&gt;Long     64位有符号补码整数($-2^{63}$~$2^{63}$-1)&lt;/li&gt;
-&lt;li&gt;Char     16位无符号Unicode字符（0~$2^{16}$-1)&lt;/li&gt;
-&lt;li&gt;String   char 序列&lt;/li&gt;
-&lt;li&gt;Float    32位IEEE754单精度浮点数&lt;/li&gt;
-&lt;li&gt;Double   64位IEEE754单精度浮点数&lt;/li&gt;
-&lt;li&gt;Boolean  true或false
-    
-    </summary>
-    
-      <category term="scala" scheme="https://cirfe.github.io/categories/scala/"/>
-    
-    
-      <category term="数据类型" scheme="https://cirfe.github.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-      <category term="操作符" scheme="https://cirfe.github.io/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
-    
-  </entry>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Charlie" />
+          <p class="site-author-name" itemprop="name">Charlie</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://yueju.github.io" title="Ju小悦" target="_blank">Ju小悦</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#If表达式"><span class="nav-number">1.</span> <span class="nav-text">If表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#While表达式"><span class="nav-number">2.</span> <span class="nav-text">While表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#For表达式"><span class="nav-number">3.</span> <span class="nav-text">For表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#枚举集合类"><span class="nav-number">3.1.</span> <span class="nav-text">枚举集合类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卫语句"><span class="nav-number">3.2.</span> <span class="nav-text">卫语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#枚举嵌套"><span class="nav-number">3.3.</span> <span class="nav-text">枚举嵌套</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流间（mid-stream-变量绑定"><span class="nav-number">3.4.</span> <span class="nav-text">流间（mid-stream)变量绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#制造新集合（for-yield组合）"><span class="nav-number">3.5.</span> <span class="nav-text">制造新集合（for/yield组合）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#break和continue"><span class="nav-number">4.</span> <span class="nav-text">break和continue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#try表达式"><span class="nav-number">5.</span> <span class="nav-text">try表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成值"><span class="nav-number">5.1.</span> <span class="nav-text">生成值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#match表达式"><span class="nav-number">6.</span> <span class="nav-text">match表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一条case语句匹配多个条件"><span class="nav-number">6.1.</span> <span class="nav-text">一条case语句匹配多个条件</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <entry>
-    <title>Hello World</title>
-    <link href="https://cirfe.github.io/2016/11/14/hello-world/"/>
-    <id>https://cirfe.github.io/2016/11/14/hello-world/</id>
-    <published>2016-11-14T08:30:45.544Z</published>
-    <updated>2016-11-14T08:30:45.544Z</updated>
-    
-    <content type="html"><![CDATA[<p>折腾了一天总算是基本搞定了。记录下几个问题：</p>
-<h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><h3 id="安装hexo出问题"><a href="#安装hexo出问题" class="headerlink" title="安装hexo出问题"></a>安装hexo出问题</h3><p>  第一次安装NodeJS的时候采用的apt方式安装，然后再装hexo出现了莫名其妙的问题。安装最新的NodeJS问题解决。</p>
-<h3 id="使用npm安装组件卡住"><a href="#使用npm安装组件卡住" class="headerlink" title="使用npm安装组件卡住"></a>使用npm安装组件卡住</h3><a id="more"></a>
-<p>  使用淘宝源，在命令后添加 –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a>.<br>  例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$npm</span> install hexo-server --save --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
-<h3 id="deploy后，在github上访问出现大量空白"><a href="#deploy后，在github上访问出现大量空白" class="headerlink" title="deploy后，在github上访问出现大量空白"></a>deploy后，在github上访问出现大量空白</h3><p>  github的问题，<a href="https://github.com/iissnan/hexo-theme-next/issues/1214" target="_blank" rel="external">解决方法</a></p>
-<h2 id="hexo-的简单使用"><a href="#hexo-的简单使用" class="headerlink" title="hexo 的简单使用"></a>hexo 的简单使用</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;折腾了一天总算是基本搞定了。记录下几个问题：&lt;/p&gt;
-&lt;h2 id=&quot;Questions&quot;&gt;&lt;a href=&quot;#Questions&quot; class=&quot;headerlink&quot; title=&quot;Questions&quot;&gt;&lt;/a&gt;Questions&lt;/h2&gt;&lt;h3 id=&quot;安装hexo出问题&quot;&gt;&lt;a href=&quot;#安装hexo出问题&quot; class=&quot;headerlink&quot; title=&quot;安装hexo出问题&quot;&gt;&lt;/a&gt;安装hexo出问题&lt;/h3&gt;&lt;p&gt;  第一次安装NodeJS的时候采用的apt方式安装，然后再装hexo出现了莫名其妙的问题。安装最新的NodeJS问题解决。&lt;/p&gt;
-&lt;h3 id=&quot;使用npm安装组件卡住&quot;&gt;&lt;a href=&quot;#使用npm安装组件卡住&quot; class=&quot;headerlink&quot; title=&quot;使用npm安装组件卡住&quot;&gt;&lt;/a&gt;使用npm安装组件卡住&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="Web" scheme="https://cirfe.github.io/categories/Web/"/>
-    
-    
-      <category term="Hexo" scheme="https://cirfe.github.io/tags/Hexo/"/>
-    
-      <category term="Github" scheme="https://cirfe.github.io/tags/Github/"/>
-    
-  </entry>
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Charlie</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
   
-</feed>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"charlietian"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
