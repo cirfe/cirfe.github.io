@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cirfe.github.io/"/>
-  <updated>2016-11-23T13:46:29.830Z</updated>
+  <updated>2016-11-25T14:35:28.451Z</updated>
   <id>https://cirfe.github.io/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scala学习(三)：基本函数定义</title>
+    <link href="https://cirfe.github.io/2016/11/25/learn-scala-3/"/>
+    <id>https://cirfe.github.io/2016/11/25/learn-scala-3/</id>
+    <published>2016-11-25T14:00:00.000Z</published>
+    <updated>2016-11-25T14:35:28.451Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Scala函数基本结构"><a href="#Scala函数基本结构" class="headerlink" title="Scala函数基本结构"></a>Scala函数基本结构</h3><p><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/scala%25E5%2587%25BD%25E6%2595%25B0%25E5%25AE%259A%25E4%25B9%2589.jpg" alt="函数结构"><br><a id="more"></a><br>Scala可以不使用return，默认函数体的最后一条表达式结果为返回值。</p>
+<h3 id="关于简写"><a href="#关于简写" class="headerlink" title="关于简写"></a>关于简写</h3><ul>
+<li>返回值类型可不写，Scala可以自动推导，除非函数为递推函数或者函数使用了return。</li>
+<li>没有返回值时，等号可以省去。</li>
+<li>如果函数体只有一条语句，则大括号可以省去。但是等号和大括号不可以同时省去。</li>
+<li>如果有参数，则参数类型不可省。如果没有参数，则可以使用空小括号也可以省去小括号。<ol>
+<li>对于使用空括号的函数，<code>def fn(){println(&quot;hello&quot;)}</code> 可以用<code>fn</code>或者<code>fn()</code>调用</li>
+<li>对于不使用括号的函数，<code>def fn{println(&quot;hello&quot;)}</code> 只能用<code>fn</code>调用。</li>
+</ol>
+</li>
+</ul>
+<h3 id="再赋值等式本身也是Unit值。"><a href="#再赋值等式本身也是Unit值。" class="headerlink" title="再赋值等式本身也是Unit值。"></a>再赋值等式本身也是Unit值。</h3><p>这一点与其他语言不通。在Scala中再赋值等式本身是Unit值，例如<br>这条等式本身是Unit，所以<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>((line = <span class="built_in">read</span>Line()) != <span class="string">""</span>)  //不起作用</div></pre></td></tr></table></figure></p>
+<p>因为<code>line = readLine()</code>返回Unit，而Unit与String比较永远返回True</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Scala函数基本结构&quot;&gt;&lt;a href=&quot;#Scala函数基本结构&quot; class=&quot;headerlink&quot; title=&quot;Scala函数基本结构&quot;&gt;&lt;/a&gt;Scala函数基本结构&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://coding.net/u/cirfe/p/pictures/git/raw/master/scala%25E5%2587%25BD%25E6%2595%25B0%25E5%25AE%259A%25E4%25B9%2589.jpg&quot; alt=&quot;函数结构&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="函数定义" scheme="https://cirfe.github.io/tags/%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89/"/>
+    
+      <category term="函数简写" scheme="https://cirfe.github.io/tags/%E5%87%BD%E6%95%B0%E7%AE%80%E5%86%99/"/>
+    
+  </entry>
   
   <entry>
     <title>Scala学习(二)：控制结构</title>

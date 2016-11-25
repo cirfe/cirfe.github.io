@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://chaohui.me/2016/11/25/learn-scala-3/</loc>
+    <lastmod>2016-11-25T14:35:28.451Z</lastmod>
+    <data>
+        <display>
+        <title>Scala学习(三)：基本函数定义</title>
+        <pubTime>2016-11-25T14:00:00.000Z</pubTime>
+        
+        <tag>函数定义</tag>
+         
+        <tag>函数简写</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://chaohui.me/2016/11/23/learn-scala-2/</loc>
     <lastmod>2016-11-23T13:46:29.830Z</lastmod>
     <data>
@@ -16,7 +35,7 @@
          
            
              
-              <breadCrumb title="scala" url="http://chaohui.me/categories/scala/"/>
+              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
           
         </display>
     </data>
@@ -38,7 +57,7 @@
          
            
              
-              <breadCrumb title="scala" url="http://chaohui.me/categories/scala/"/>
+              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
           
         </display>
     </data>
@@ -60,7 +79,7 @@
          
            
              
-              <breadCrumb title="Web" url="http://chaohui.me/categories/Web/"/>
+              <breadCrumb title="Web" url="https://chaohui.me/categories/Web/"/>
           
         </display>
     </data>
