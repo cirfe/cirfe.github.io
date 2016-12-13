@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cirfe.github.io/"/>
-  <updated>2016-11-25T14:35:28.451Z</updated>
+  <updated>2016-12-13T13:46:42.319Z</updated>
   <id>https://cirfe.github.io/</id>
   
   <author>
@@ -16,11 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows下修改文件图标</title>
+    <link href="https://cirfe.github.io/2016/12/13/windows-change-icon/"/>
+    <id>https://cirfe.github.io/2016/12/13/windows-change-icon/</id>
+    <published>2016-12-13T13:05:00.000Z</published>
+    <updated>2016-12-13T13:46:42.319Z</updated>
+    
+    <content type="html"><![CDATA[<p>卸载WPS，装上Office后，文件可以正常打开，但是图标显示为白色，即不可打开的文件图标。解决办法：使用<strong>Filetypeman</strong>此软件来修改文件图标。这里提供一个<a href="https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypesman.zip" target="_blank" rel="external">下载链接</a><br><a id="more"></a></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li>打开filetypeman,如下图所示，1处为可以正常显示的图标，2处为无法正常显示的图标，选中1处。<br><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypeman-picture1.jpg" alt="图1"></li>
+<li>右键选择edit selected file type，然后复制Default Icons中的路径。<br><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypeman-picture2.jpg" alt="图2"></li>
+<li>然后右键2处，将之前复制的路径复制到2处的Default Icons处。<br><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypeman-picture3.jpg" alt="图1"></li>
+<li>点击<em>…</em>键即可为2处的文件选择一个合适的图标。<br><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypeman-picture4.jpg" alt="图1"></li>
+</ol>
+<p><strong>注：有的时候修改完之后，在桌面上文件的图标依旧显示为白色，尝试将此文件拖到其他文件夹就可以了。</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;卸载WPS，装上Office后，文件可以正常打开，但是图标显示为白色，即不可打开的文件图标。解决办法：使用&lt;strong&gt;Filetypeman&lt;/strong&gt;此软件来修改文件图标。这里提供一个&lt;a href=&quot;https://coding.net/u/cirfe/p/pictures/git/raw/master/filetypesman.zip&quot;&gt;下载链接&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小技巧" scheme="https://cirfe.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="Windows" scheme="https://cirfe.github.io/tags/Windows/"/>
+    
+      <category term="文件图标" scheme="https://cirfe.github.io/tags/%E6%96%87%E4%BB%B6%E5%9B%BE%E6%A0%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Scala学习(三)：基本函数定义</title>
     <link href="https://cirfe.github.io/2016/11/25/learn-scala-3/"/>
     <id>https://cirfe.github.io/2016/11/25/learn-scala-3/</id>
     <published>2016-11-25T14:00:00.000Z</published>
-    <updated>2016-11-25T14:35:28.451Z</updated>
+    <updated>2016-12-13T13:20:18.653Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Scala函数基本结构"><a href="#Scala函数基本结构" class="headerlink" title="Scala函数基本结构"></a>Scala函数基本结构</h3><p><img src="https://coding.net/u/cirfe/p/pictures/git/raw/master/scala%25E5%2587%25BD%25E6%2595%25B0%25E5%25AE%259A%25E4%25B9%2589.jpg" alt="函数结构"><br><a id="more"></a><br>Scala可以不使用return，默认函数体的最后一条表达式结果为返回值。</p>
 <h3 id="关于简写"><a href="#关于简写" class="headerlink" title="关于简写"></a>关于简写</h3><ul>
@@ -42,6 +74,8 @@
       &lt;h3 id=&quot;Scala函数基本结构&quot;&gt;&lt;a href=&quot;#Scala函数基本结构&quot; class=&quot;headerlink&quot; title=&quot;Scala函数基本结构&quot;&gt;&lt;/a&gt;Scala函数基本结构&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://coding.net/u/cirfe/p/pictures/git/raw/master/scala%25E5%2587%25BD%25E6%2595%25B0%25E5%25AE%259A%25E4%25B9%2589.jpg&quot; alt=&quot;函数结构&quot;&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="scala" scheme="https://cirfe.github.io/categories/scala/"/>
     
     
       <category term="函数定义" scheme="https://cirfe.github.io/tags/%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89/"/>

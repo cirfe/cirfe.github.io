@@ -4,8 +4,30 @@
 
     
   <url>
-    <loc>http://chaohui.me/2016/11/25/learn-scala-3/</loc>
-    <lastmod>2016-11-25T14:35:28.451Z</lastmod>
+    <loc>https://cirfe.coding.me/2016/12/13/windows-change-icon/</loc>
+    <lastmod>2016-12-13T13:46:42.319Z</lastmod>
+    <data>
+        <display>
+        <title>Windows下修改文件图标</title>
+        <pubTime>2016-12-13T13:05:00.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>文件图标</tag>
+         
+         
+           
+             
+              <breadCrumb title="小技巧" url="https://cirfe.coding.me/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://cirfe.coding.me/2016/11/25/learn-scala-3/</loc>
+    <lastmod>2016-12-13T13:20:18.653Z</lastmod>
     <data>
         <display>
         <title>Scala学习(三)：基本函数定义</title>
@@ -17,13 +39,16 @@
          
          
            
+             
+              <breadCrumb title="scala" url="https://cirfe.coding.me/categories/scala/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://chaohui.me/2016/11/23/learn-scala-2/</loc>
+    <loc>https://cirfe.coding.me/2016/11/23/learn-scala-2/</loc>
     <lastmod>2016-11-23T13:46:29.830Z</lastmod>
     <data>
         <display>
@@ -35,7 +60,7 @@
          
            
              
-              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
+              <breadCrumb title="scala" url="https://cirfe.coding.me/categories/scala/"/>
           
         </display>
     </data>
@@ -43,7 +68,7 @@
 
     
   <url>
-    <loc>http://chaohui.me/2016/11/15/learn-scala-1/</loc>
+    <loc>https://cirfe.coding.me/2016/11/15/learn-scala-1/</loc>
     <lastmod>2016-11-15T15:03:11.690Z</lastmod>
     <data>
         <display>
@@ -57,7 +82,7 @@
          
            
              
-              <breadCrumb title="scala" url="https://chaohui.me/categories/scala/"/>
+              <breadCrumb title="scala" url="https://cirfe.coding.me/categories/scala/"/>
           
         </display>
     </data>
@@ -65,7 +90,7 @@
 
     
   <url>
-    <loc>http://chaohui.me/2016/11/14/hello-world/</loc>
+    <loc>https://cirfe.coding.me/2016/11/14/hello-world/</loc>
     <lastmod>2016-11-14T08:30:45.544Z</lastmod>
     <data>
         <display>
@@ -79,7 +104,7 @@
          
            
              
-              <breadCrumb title="Web" url="https://chaohui.me/categories/Web/"/>
+              <breadCrumb title="Web" url="https://cirfe.coding.me/categories/Web/"/>
           
         </display>
     </data>
